@@ -8,7 +8,11 @@ import org.junit.runner.RunWith;
         glue = "steps", 
         publish = true,
         tags="@AC4",
-        plugin = {"pretty", "html:target/TestReport/cucumber-reports.html"}
+        		 plugin = {
+        			        "pretty",
+        			        "html:target/TestReport/cucumber-reports.html",
+        			        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        			    }
 )
 public class RunCucumberTest {
 }
